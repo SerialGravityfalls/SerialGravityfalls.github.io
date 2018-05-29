@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>Гравити фолз</title>
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/kritika-grid.css">
+  <link rel="stylesheet" href="css/kritika.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript">
+ $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top - 150;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+</script>
+</head>
+<body class="body page-kritika clearfix">
+  <div class="container container-1 clearfix">
+    <div class="container container-2 clearfix">
+      <button onClick="window.location='index.html';" class="_button _button-1">Информация</button>
+      <button onClick="window.location='syzet.html';" class="_button _button-2">сюжет</button>
+      <button onClick="window.location='hero.html';" class="_button _button-3">персонажи</button>
+      <button onClick="window.location='kritika.html';" class="_button _button-4">критика</button>
+    </div>
+  </div>
+  <div class="text text-1">
+    <p><span>Критика</span></p>
+    <p>Гравити Фолз получил признание критиков. Брайан Лоури из журнала Variety заявил: «Характерной чертой данного сериала является его бесшабашность, благодаря которой он способен позабавить детей и вызвать ностальгию у их родителей».&nbsp;</p>
+    <p>Роберт Ллойд из Los Angeles Times назвал шоу «осторожно скрученным с некоторыми диснеевскими действиями потеплением сердца».</p>
+    <p>&nbsp;В своем обзоре Дэвид Хинкли из New York Daily News назвал Гравити Фолз «причудливым и привлекательным» и похвалил за персонаж Мэйбл Пайнс.&nbsp;</p>
+    <p>Мэтт Блум, пишущий для Wired, сравнил шоу с Обычным мультиком и с Финесом и Фербом, отмечая Гравити Фолз, как «умный, странный и немного колкий».&nbsp;</p>
+    <p>Эрик Каин из Forbes назвал Гравити Фолз «лучшим, что есть сейчас на телевидении».&nbsp;</p>
+    <p>Кайла Кобб из New York Post охарактеризовала Гравити Фолз, как «одно из самых конструктивных, интеллектуальных шоу, когда-либо созданных».<br></p>
+</div>
+  <div class="container container-3 clearfix">
+    <div class="container container-4 clearfix">
+      <p class="text">Весенев Валерий</p>
+      <p class="text text-3">ПШП, 2018</p>
+      <p class="text text-4">Спонсоры:</p>
+      <div class="container container-5 clearfix">
+        <button onClick="window.location='https://vk.com';" class="_button _button-5"></button>
+        <button onClick="window.location='https://informatics.ru';" class="_button _button-6"></button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

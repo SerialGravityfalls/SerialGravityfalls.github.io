@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>Гравити фолз</title>
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/syzet-grid.css">
+  <link rel="stylesheet" href="css/syzet.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript">
+ $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top - 150;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+</script>
+</head>
+<body class="body page-syzet clearfix">
+  <div id="step1" class="container container-1 clearfix">
+    <div class="container container-2 clearfix">
+      <button onClick="window.location='index.html';" class="_button _button-1">Информация</button>
+      <button onClick="window.location='syzet.html';" class="_button _button-2">сюжет</button>
+      <button onClick="window.location='hero.html';" class="_button _button-3">персонажи</button>
+      <button onClick="window.location='kritika.html';" class="_button _button-4">критика</button>
+    </div>
+  </div>
+  <div class="container container-3 clearfix">
+    <div class="container container-4 clearfix">
+      <p class="text text-1">В штате Орегон располагается городок – <span>Гравити Фолз.</span> Именно сюда приехали славные ребятишки – Диппер и сестра-близнец Мэйбл. Дети прибыли на каникулы, чтобы погостить у своего двоюродного дедушки по имени Стэн, который владеет едва ли не главной достопримечательностью скучного населённого пункта – туристическим центром с манящим названием «Хижина чудес».</p>
+      <p class="text text-2">Первое время близнецы волочат унылое существование, резонно полагая – нормальных развлечений в Гравити Фолз нет. Каникулы грозят обернуться неприятной «бытовухой». Однако постепенно крепнет уверенность, что в городке происходят необъяснимые явления, требующие разгадок.</p>
+      <p class="text text-3">Настоящие приключения начинаются, когда Диппер случайно обнаруживает загадочный дневник от неизвестного автора. В нём подробно описываются всяческие аномалии, которые имеются в населённом пункте. Любопытные близнецы намереваются открыть тайну Гравити Фолз и исследовать все примечательные места городка. Также ребята желают отыскать владельца чудесного дневника.<br></p>
+      <p class="text text-4">Приключения брата и сестры будут изобиловать различными опасностями – и тогда Диппер и Мэйбл поймут, что местность, в которой проживает их дедуля, не такая уж скучная. Конечно, наши герои не только будут сталкиваться с опасностями, но и заводить новых интересных друзей, и каникулы заметно разнообразятся.<br></p>
+    </div>
+  </div>
+  <div class="container container-5 clearfix">
+    <p class="text text-5">Полезна ли эта информация:</p>
+    <label class="radio-label radio-label-1 clearfix">
+      <input class="radio" name="name" type="radio">
+      <p class="text text-6">да</p>
+    </label>
+    <label class="radio-label radio-label-2 clearfix">
+      <input class="radio" name="name" type="radio">
+      <p class="text text-7">среднее</p>
+    </label>
+    <label class="radio-label radio-label-3 clearfix">
+      <input class="radio" name="name" type="radio">
+      <p class="text text-8">нет</p>
+    </label>
+  </div>
+  <div class="container container-6 clearfix">
+    <div class="container container-7 clearfix">
+      <p class="text text-9">Весенев Валерий</p>
+      <p class="text text-10">ПШП, 2018</p>
+      <p class="text text-11">Спонсоры:</p>
+      <div class="container container-8 clearfix">
+        <button onClick="window.location='https://vk.com';" class="_button _button-5"></button>
+        <button onClick="window.location='https://informatics.ru';" class="_button _button-6"></button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
